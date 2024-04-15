@@ -11,7 +11,6 @@ const IndexPage: NextPage = () => {
             setLoading(false);
         });
     }, []);
-    //ローディング中でなければ、画像を表示する
     return <div>{loading || <img src={imageUrl} />}</div>;
 };
 export default IndexPage;
